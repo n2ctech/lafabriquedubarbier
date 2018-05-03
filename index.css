@@ -1,0 +1,440 @@
+body {
+    background-color: #183547;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+/* NAVBAR SECTION */
+.navbar {
+    height: 50px;
+    background-color: #183547;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 19;
+    width: 100%;
+}
+
+/* Logo branding */ 
+.logoDiv{
+    padding-left: 4.5%;
+    top: 0;
+    width: 300px;
+    position: fixed;
+    z-index: 20; 
+}
+#logo {
+    margin-top: 0px;
+    width: 100%;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.7);
+}
+/* Styling and positioning navbar links */ 
+.navbarItems {
+    background-color: #183547;
+    font-size: 22px;
+    font-weight: 700;
+    padding-right: 4.5%;
+}
+.nav-item {
+    margin-right: 70px;
+    
+    color: #7F7A40 !important;
+}
+.nav-item:hover{
+    color: #b5ae5b !important;
+}
+/* Carousel Section */ 
+#carouselExampleControls {
+    position: relative;
+    z-index: 0.2;
+    width: 100%;
+    padding-top: 50px;
+}
+.carouselControl{
+    background-color: rgba(0,0,0,0.3);
+}
+.carousel-caption {
+    color: #FEF47F;
+}
+
+/* ---> Gallery Section <--- */ 
+
+/* Instagram link */ 
+.instaName {
+    padding-top: 4%;
+    color: #FEF47F;
+    font-weight: 700;
+}
+.instaName >img {
+    padding-right: 10px;
+    margin-top: -2px;
+}
+/* Gallery photos container style */
+.galleryPhotos{
+    padding-top: 3.5%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;    
+}
+.galleryPhotos div img {
+    height: 350px;
+}
+.firstRow {
+    padding-bottom: 1.75%; 
+}
+.secondRow {
+    padding-top: 1.75%;
+}
+.galleryPhotos  div  img {
+    border-radius: 15px;
+    border: 2px solid #FEF47F;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.6);
+}
+
+/* ---> TEAM section <--- */
+#team {
+    padding-top: 150px;
+    padding-bottom: 140px;
+}
+.our-team{
+    margin-top: 100px;
+    padding: 30px 0 40px 0;
+    background-color: #183547;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border:1px solid #FEF47F;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.8);
+    
+}
+h1{
+    margin-bottom:15px;
+}
+
+/* Picture positioning */ 
+.our-team .pic{
+    display:inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 55px;
+    /* background-color: #eb1768; */
+    position: relative;
+    z-index: 1;
+}
+/* Team picture animations */ 
+.our-team .pic::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #FEF47F;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0; 
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic::before{
+    height: 100%;
+}
+.our-team .pic::after{
+    content: "";
+    width: 100%;
+    height: 99%;
+    border-radius: 50%;
+    background: #FEF47F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+.our-team:hover .pic img{
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+.our-team .team-content{
+    margin-bottom: 30px;
+    color: #FEF47F !important;
+}
+.our-team .title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #4e5052;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.our-team .post{
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    color: #6E6937;
+    text-transform: capitalize; 
+}
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin:0;
+    background: #FEF47F;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+
+}
+
+.our-team:hover .social{
+    bottom: 0;
+}
+.our-team .social li{
+ display: inline-block;
+}
+.our-team .social li a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;transition: all 0.5s ease 0s;
+
+   }
+   .our-team .social li a:hover{
+       color: #eb1768;
+       background: #f7f5ec;
+       text-decoration: none;
+
+   }
+
+/* ---> CONTACT section <--- */ 
+.jumbotron {
+margin-top: 5%;
+    margin-bottom: 5%;
+background: #FEF47F;
+color: #183457;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.7);
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #183457;
+}
+.h1 small {
+font-size: 24px;
+}
+.contact {
+    width: 100%;
+}
+label {
+    color: #FEF47F;
+}
+#addressRight {
+    float: right;
+    color: #FEF47F;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+#email2 {
+    margin-top: 30px;
+}
+#phone {
+    padding-top: 20px;
+}
+.footer{
+    padding-top: 5%;
+} 
+
+ .navbar-nav .active{
+    color: #FEF47F !important;
+}
+@media only screen and (max-width: 1024px) {
+    
+.galleryPhotos div img {
+    height: 200px;
+        width: 200px;
+}
+}
+@media only screen and (max-width: 800px) {
+    #logo {
+        height: 150px;
+        width: 150px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    #logo {
+        height: 100px;
+        width: 100px;
+    }
+    #addressRight {
+    float: none;
+}
+}
+@media only screen and (max-width: 400px) {
+    #logo {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* *** MODAL STYLING *** */
+
+/* The Modal (Background) */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed; /* Stays in place */
+    z-index: 20; /* Sits on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* full height */ 
+    background-color: rgb(0,0,0); /* fallback color */
+    background-color: rgba(255,255,255,0.9); /* White w/ opacity */
+}
+/* Modal Content (image) */ 
+.modal-content { 
+    margin: auto; 
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    height: 80%;
+    
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6); /* Shadow for the image */
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.7s;
+}
+
+/* Define animation */
+
+@-webkit-keyframes zoom {
+    from{-webkit-transform: scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* The close button */
+.close {
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: aqua;
+}
+/* Close button animation */
+.close:hover,
+.close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 768px){
+    .modal-content{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1684px){
+    .modal{
+        padding-top: 15%;
+    }
+}
+@media only screen and (max-width: 1552px){
+    .modal{
+        padding-top: 20%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .modal{
+        padding-top: 30%;
+    }
+    .modal-content{
+        width: 80%;
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .modal{
+        padding-top: 35%;
+    }
+    .modal-content{
+        width: 70%;
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .modal{
+        padding-top: 35%;
+    }
+    .modal-content{
+        width: 65%;
+        height: 30%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .modal {
+        padding-top: 45%;
+    }
+    .modal-content{
+        width: 80%;
+        height: 20%;
+    }
+}
+/* Instagram link style */
+
+#instagramLink {
+    text-decoration: none;
+    color: #FEF47F
+}
+
+h1{
+    color: #FEF47F !important;
+}
+#sanFrancisco {
+    margin-top: -5px;
+}
