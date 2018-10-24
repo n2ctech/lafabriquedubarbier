@@ -15,13 +15,13 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#carouselExampleControls"> <div class="container logoDiv"> <img id="logo" src="assets/logo.jpg"
-                /> </div>
+        <a class="navbar-brand" href="#carouselExampleControls">
+            <div class="container logoDiv"> <img id="logo" src="assets/logo.jpg" /> </div>
         </a>
 
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -72,8 +72,7 @@
 
     <div class="container-fluid">
         <div class="row instaName justify-content-center" id="gallery">
-            <a id="instagramLink" href="https://www.instagram.com/lafabriquedubarbier11/" target="_blank"> <img src="assets/icons/instagram%20(1).png"
-                />@lafabriquedubarbier11</a>
+            <a id="instagramLink" href="https://www.instagram.com/lafabriquedubarbier11/" target="_blank"> <img src="assets/icons/instagram%20(1).png" />@lafabriquedubarbier11</a>
         </div>
     </div>
 
@@ -126,7 +125,7 @@
                     </div>
                     <ul class="social">
                         <li><a href="https://www.facebook.com/profile.php?id=100013373020045" target="_blank" class="fa fa-facebook">
-                            <img src="assets/icons/facebook.png"></a></li>
+                                <img src="assets/icons/facebook.png"></a></li>
                         <li><a href="https://www.facebook.com/pages/La-fabrique-du-barbier/423966111347643" target="_blank"
                                 class="fa fa-twitter"><img src="assets/icons/instagram%20(1).png"></a></li>
                     </ul>
@@ -162,7 +161,8 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                         </span>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                            required="required" /></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="subject">
@@ -179,7 +179,8 @@
                                 <div class="form-group">
                                     <label for="name">
                                         Message</label>
-                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25"
+                                        required="required" placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -264,26 +265,13 @@
             }
         })
     </script>
-    <script type='text/javascript' charset='utf-8'>
-        window.liveSiteAsyncInit = function () {
-            LiveSite.init({
-                id: 'WI-CJ6IU1U4BGDCY0J6R0IL'
-            })
-        }
-            ; (function (d, s, id) {
-                var js,
-                    fjs = d.getElementsByTagName(s)[0],
-                    p = 'https://',
-                    r = Math.floor(new Date().getTime() / 1000000)
-                if (d.getElementById(id)) {
-                    return
-                }
-                js = d.createElement(s)
-                js.id = id
-                js.src = p + 'widgets.vcdnita.com/assets/livesite.js?' + r
-                fjs.parentNode.insertBefore(js, fjs)
-            })(document, 'script', 'livesite-jssdk')
+    <script>
+            (function (w, a, v, y) {
+                w = a.createElement(y); w.async = 1; w.defer = 1; w.src = v;
+                y = a.getElementsByTagName(y)[0]; y.parentNode.insertBefore(w, y);
+            })(window, document, 'https://widget.s.production.wavy.team/widget?js=1&subdomain=lafabriquedubarbier', 'script');
     </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
